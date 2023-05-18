@@ -5,14 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - enemyAttack
+  - ratAttack
+  - playerTag
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ratAttack
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject player;
+    public int playerHealth = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +18,9 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         
+    }
+    public void TakeDamage(int damage){
+        playerHealth -= damage;
+        Debug.Log("damage taken");
     }
 }
