@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
 
     void Awake()
     {
+        transform.Rotate(90, 0, 0);
         Destroy(gameObject, life);
     }
 
