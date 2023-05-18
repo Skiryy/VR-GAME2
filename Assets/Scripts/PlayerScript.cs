@@ -21,6 +21,6 @@ public class PlayerScript : MonoBehaviour
     }
     public void TakeDamage(int damage){
         playerHealth -= damage;
-        Debug.Log("damage taken");
+        Debug.Log(playerHealth);
     }
 }
