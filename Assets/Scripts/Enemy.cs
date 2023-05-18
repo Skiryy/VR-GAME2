@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     public GameObject ratAttackPrefab;
     public int ratAttackDamage = 10;
     public float attackDelay = 5f;
-    public float attackHeight = 1f; 
 
     private Rigidbody rb;
     private bool canShoot = true;
@@ -40,7 +39,7 @@ public class Enemy : MonoBehaviour
         if (canShoot)
         {
             GameObject ratAttack = Instantiate(ratAttackPrefab, transform.position, Quaternion.identity);
-            ratAttack.transform.position += Vector3.up * attackHeight; 
+            ratAttack.transform.position += Vector3.up * 1; 
             Rigidbody ratAttackRigidbody = ratAttack.GetComponent<Rigidbody>();
 
             Vector3 direction = (player.transform.position - transform.position).normalized;
