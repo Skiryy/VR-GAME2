@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1312762690071167192}
   - component: {fileID: 1312762690071167194}
   - component: {fileID: 1312762690071167189}
+  - component: {fileID: 6413913342599476656}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -161,6 +162,34 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6413913342599476656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312762690071167198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ffc17217612c4f8ca91a695ea0df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Input:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Input
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 7c41d858-ee4c-4615-931f-89b5d16d96d8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  Speed: 0.1
+  Controller: {fileID: 1312762691640664806}
+  DeTurn: {fileID: 0}
 --- !u!1 &1312762690273256182
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 0}
   player: {fileID: 1312762690852164840}
+  playerHealth: 100
 --- !u!1 &1312762691054920114
 GameObject:
   m_ObjectHideFlags: 0
