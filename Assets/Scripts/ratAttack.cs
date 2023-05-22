@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ratAttack : MonoBehaviour
 {
-    public int damageAmount = 10;
+    public int damageAmount = 5;
     public string playerTag = "Player"; 
 
     private void OnCollisionEnter(Collision collision)

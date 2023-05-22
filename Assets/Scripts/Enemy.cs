@@ -34,22 +34,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Shoot()
+private void Shoot()
+{
+    if (canShoot)
     {
-        if (canShoot)
-        {
-            GameObject ratAttack = Instantiate(ratAttackPrefab, transform.position, Quaternion.identity);
-            ratAttack.transform.position += Vector3.up * 5;
-            Rigidbody ratAttackRigidbody = ratAttack.GetComponent<Rigidbody>();
+        GameObject ratAttack = Instantiate(ratAttackPrefab, transform.position, Quaternion.identity);
+        ratAttack.transform.position += Vector3.up * 5;
+        Rigidbody ratAttackRigidbody = ratAttack.GetComponent<Rigidbody>();
 
-            Vector3 direction = (player.transform.position - transform.position).normalized;
-            ratAttackRigidbody.AddForce(direction * attackSpeed, ForceMode.VelocityChange);
-            Physics.IgnoreCollision(ratAttack.GetComponent<Collider>(), GetComponent<Collider>());
+        Vector3 direction = (player.transform.position - transform.position).normalized;
+        direction += Vector3.down * 0.3f;
+        ratAttackRigidbody.AddForce(direction * attackSpeed, ForceMode.VelocityChange);
+        Physics.IgnoreCollision(ratAttack.GetComponent<Collider>(), GetComponent<Collider>());
 
-            canShoot = false;
-            Invoke("ResetShoot", attackDelay);
-        }
+        canShoot = false;
+        Invoke("ResetShoot", attackDelay);
     }
+}
 
     private void ResetShoot()
     {
