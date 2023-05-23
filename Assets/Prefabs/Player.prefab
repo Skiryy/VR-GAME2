@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86959736553854943}
+  - component: {fileID: 3012359089821951465}
+  - component: {fileID: 9093300771442156745}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -32,6 +34,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3012359089821951465
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2782206039330352451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2419663
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &9093300771442156745
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2782206039330352451}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3051499675715185588
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +158,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312762690852164839, guid: 9dff958657cd80f4f80818b63e75bf62,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2782206039330352451}
+    - target: {fileID: 1312762690852164839, guid: 9dff958657cd80f4f80818b63e75bf62,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 2171736745590279688}
     - target: {fileID: 1312762690852164840, guid: 9dff958657cd80f4f80818b63e75bf62,
         type: 3}
       propertyPath: m_Name
@@ -169,13 +211,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2782206039330352451}
-  Input:
+  Walk:
     m_UseReference: 1
     m_Action:
-      m_Name: Input
+      m_Name: Walk
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 7c41d858-ee4c-4615-931f-89b5d16d96d8
+      m_Id: bdb8684c-c2bb-4f9f-bc50-eb252d5bd4e9
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -185,6 +227,21 @@ MonoBehaviour:
   Speed: 0.1
   Controller: {fileID: 2171736745388129119}
   DeTurn: {fileID: 3051499675715185588}
+  Jetpack:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Jetpack
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c4606b3f-6813-4394-b1a5-2702d5322a89
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  throttle: 0
+  force: 10
 --- !u!1 &2171736745388129119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1312762691054920114, guid: 9dff958657cd80f4f80818b63e75bf62,

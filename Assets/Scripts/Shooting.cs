@@ -10,6 +10,7 @@ public class Shooting : MonoBehaviour
     public float bulletSpeed = 10;
     public float bulletDelay = 5.0f; 
     public InputActionProperty gunShooting;
+    public float triggerPressed;
 
     private float lastShotTime = -Mathf.Infinity;
 
@@ -17,7 +18,7 @@ public class Shooting : MonoBehaviour
     {
         if (Time.time - lastShotTime >= bulletDelay)
         {
-            float triggerPressed = gunShooting.action.ReadValue<float>();
+            triggerPressed = gunShooting.action.ReadValue<float>();
             if (triggerPressed > 0)
             {
                 Debug.Log(triggerPressed);
