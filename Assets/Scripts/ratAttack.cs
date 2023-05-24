@@ -7,7 +7,7 @@ public class ratAttack : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer != 6){
+        if (collision.gameObject.layer != 6){ 
             if (collision.gameObject.tag == "playerTag")
             {
                 PlayerScript playerHealth = collision.gameObject.GetComponent<PlayerScript>();

@@ -39,7 +39,7 @@ private void Shoot()
     if (canShoot)
     {
         GameObject ratAttack = Instantiate(ratAttackPrefab, transform.position, Quaternion.identity);
-        ratAttack.transform.position += Vector3.up * 5;
+        ratAttack.transform.position += Vector3.up * 3;
         Rigidbody ratAttackRigidbody = ratAttack.GetComponent<Rigidbody>();
 
         Vector3 direction = (player.transform.position - transform.position).normalized;

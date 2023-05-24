@@ -114,12 +114,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   moveSpeed: 3
-  attackDistance: 8
-  attackSpeed: 10
+  attackDistance: 10
+  attackSpeed: 20
   ratAttackPrefab: {fileID: 3670456181480141435, guid: 2b0062012af5cee428d6c11f81dea9ec,
     type: 3}
   ratAttackDamage: 5
-  attackDelay: 6
+  attackDelay: 4
 --- !u!54 &-6913848137312020110
 Rigidbody:
   m_ObjectHideFlags: 0
