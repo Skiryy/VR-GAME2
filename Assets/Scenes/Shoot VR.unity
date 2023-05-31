@@ -316,6 +316,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
+        type: 3}
+      propertyPath: Snapturn.m_Reference
+      value: 
+      objectReference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
+        type: 3}
+      propertyPath: Snapturn.m_Action.m_Id
+      value: 32cc9f5e-a8b1-4bc2-9d45-38bc72e094af
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
+        type: 3}
+      propertyPath: Snapturn.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
+        type: 3}
+      propertyPath: Snapturn.m_Action.m_Name
+      value: Snapturn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985f0ae3152fbcf4cb41075d847e9a8c, type: 3}
 --- !u!1 &897199059
