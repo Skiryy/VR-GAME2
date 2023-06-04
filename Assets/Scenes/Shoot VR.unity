@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.4
-    ledgeDropHeight: 0
+    agentRadius: 1.3
+    agentHeight: 5.4
+    agentSlope: 22.6
+    agentClimb: 1.3
+    ledgeDropHeight: 2
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.4333333
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,13 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: ad1dcde1cb9dfcd4cbf4bba431554f09, type: 2}
+--- !u!1 &448985652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7563318838752030734, guid: 9ad63185e404eed42b449c58ae7acd4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1932310757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &471303807
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,8 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d682a3471754c204fb8955fe6684a875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4879511997622325925, guid: e66d754f42133a44da3005961733a740,
-    type: 3}
+  enemyPrefab: {fileID: 448985652}
   spawnPoint: {fileID: 897199060}
   spawnInterval: 20
   maxEnemies: 5
@@ -315,27 +320,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
-        type: 3}
-      propertyPath: Snapturn.m_Reference
-      value: 
-      objectReference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
-        type: 3}
-    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
-        type: 3}
-      propertyPath: Snapturn.m_Action.m_Id
-      value: 32cc9f5e-a8b1-4bc2-9d45-38bc72e094af
-      objectReference: {fileID: 0}
-    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
-        type: 3}
-      propertyPath: Snapturn.m_UseReference
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
-        type: 3}
-      propertyPath: Snapturn.m_Action.m_Name
-      value: Snapturn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985f0ae3152fbcf4cb41075d847e9a8c, type: 3}
@@ -613,6 +597,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1932310757
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187075153466354356, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7563318838752030734, guid: 9ad63185e404eed42b449c58ae7acd4c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rat Boss
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ad63185e404eed42b449c58ae7acd4c, type: 3}
 --- !u!4 &292822065062543
 Transform:
   m_ObjectHideFlags: 0
@@ -702,8 +755,8 @@ GameObject:
   m_Name: pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &18166319323790647
 MeshFilter:
@@ -830,7 +883,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &37357821617013607
 MeshRenderer:
@@ -905,8 +958,8 @@ GameObject:
   m_Name: polySurface9.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &47039338868844869
 Transform:
@@ -1122,7 +1175,7 @@ GameObject:
   m_Name: Banca13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &79093007726579525
@@ -1260,8 +1313,8 @@ GameObject:
   m_Name: pCylinder9.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &98726440729075227
 Transform:
@@ -1319,8 +1372,8 @@ GameObject:
   m_Name: pCube9.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &103745100480831342
 Transform:
@@ -1354,7 +1407,7 @@ GameObject:
   m_Name: Banca36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &122619537327637328
@@ -1415,8 +1468,8 @@ GameObject:
   m_Name: pCube9.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &134414257171710250
 MeshRenderer:
@@ -1496,7 +1549,7 @@ GameObject:
   m_Name: BancaEstudiante_14:Mesa_TARGET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &139425581054638453
@@ -1515,8 +1568,8 @@ GameObject:
   m_Name: pCube10.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &140674334427814884
 Transform:
@@ -1599,8 +1652,8 @@ GameObject:
   m_Name: pCylinder9.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &153212984409357168
 MeshRenderer:
@@ -1805,7 +1858,7 @@ GameObject:
   m_Name: SeguroP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &180425447433093576
@@ -1925,8 +1978,8 @@ GameObject:
   m_Name: pCylinder2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &198919979919584684
 GameObject:
@@ -2222,8 +2275,8 @@ GameObject:
   m_Name: pCube9.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &255836071557154559
 MeshRenderer:
@@ -2325,8 +2378,8 @@ GameObject:
   m_Name: pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &265844458842491942
 MeshFilter:
@@ -2512,8 +2565,8 @@ GameObject:
   m_Name: LibreroCH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &279351738619071540
 Transform:
@@ -2600,7 +2653,7 @@ GameObject:
   m_Name: Silla_TARGET.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &301157249746407269
@@ -2634,8 +2687,8 @@ GameObject:
   m_Name: polySurface9.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &309736387085079874
 MeshFilter:
@@ -3319,7 +3372,7 @@ GameObject:
   m_Name: Silla_TARGET.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &407797408880176030
@@ -3460,8 +3513,8 @@ GameObject:
   m_Name: pCube10.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &419935176248582318
 Transform:
@@ -3753,7 +3806,7 @@ GameObject:
   m_Name: Banca35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &515228687393284756
@@ -4061,8 +4114,8 @@ GameObject:
   m_Name: pCylinder9.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &553890974863924722
 Transform:
@@ -4309,8 +4362,8 @@ GameObject:
   m_Name: pCube8.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &585031375761209505
 GameObject:
@@ -4325,7 +4378,7 @@ GameObject:
   m_Name: Silla_TARGET.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &590905673418869976
@@ -4409,8 +4462,8 @@ GameObject:
   m_Name: pCube8.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &612801880304580552
 Transform:
@@ -4688,8 +4741,8 @@ GameObject:
   m_Name: pCylinder10.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &656208621077542896
 Transform:
@@ -4764,8 +4817,8 @@ GameObject:
   m_Name: pCylinder10.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &666415488644888639
 Transform:
@@ -4919,8 +4972,8 @@ GameObject:
   m_Name: pCylinder13.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &697156221710571583
 MeshRenderer:
@@ -5060,8 +5113,8 @@ GameObject:
   m_Name: pCylinder9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &723811034253857655
 MeshRenderer:
@@ -5163,8 +5216,8 @@ GameObject:
   m_Name: pCylinder10.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &729838815384473600
 Transform:
@@ -5357,8 +5410,8 @@ GameObject:
   m_Name: pCylinder11.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &754770191964940151
 Transform:
@@ -5445,7 +5498,7 @@ GameObject:
   m_Name: Mesa_TARGET.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &766722320921968656
@@ -5679,8 +5732,8 @@ GameObject:
   m_Name: pCylinder11.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &793328281259710113
 GameObject:
@@ -5698,8 +5751,8 @@ GameObject:
   m_Name: pCube8.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &793347754286322065
 Transform:
@@ -6027,8 +6080,8 @@ GameObject:
   m_Name: pCylinder11.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &831204947125697189
 GameObject:
@@ -6043,7 +6096,7 @@ GameObject:
   m_Name: Silla_TARGET.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &834898438695697772
@@ -6159,8 +6212,8 @@ GameObject:
   m_Name: polySurface9.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &848973904769858776
 MeshRenderer:
@@ -6594,8 +6647,8 @@ GameObject:
   m_Name: polySurface9.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &930876474024356118
 GameObject:
@@ -6647,8 +6700,8 @@ GameObject:
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &944910758051218184
 MeshRenderer:
@@ -6723,8 +6776,8 @@ GameObject:
   m_Name: pCube8.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &954323884414149810
 GameObject:
@@ -6742,8 +6795,8 @@ GameObject:
   m_Name: pCylinder12.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &957727400101330677
 GameObject:
@@ -6761,8 +6814,8 @@ GameObject:
   m_Name: pCylinder12.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &966648769148459607
 MeshRenderer:
@@ -6994,7 +7047,7 @@ GameObject:
   m_Name: Mesa_TARGET.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &992442052090991058
@@ -7299,7 +7352,7 @@ GameObject:
   m_Name: Silla_TARGET.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1027600317352605765
@@ -7418,8 +7471,8 @@ GameObject:
   m_Name: polySurface9.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1052456507845668958
 GameObject:
@@ -7437,8 +7490,8 @@ GameObject:
   m_Name: pCube24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1062930620120577731
 MeshFilter:
@@ -7659,8 +7712,8 @@ GameObject:
   m_Name: pCylinder13.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1094528633512367315
 Transform:
@@ -7827,8 +7880,8 @@ GameObject:
   m_Name: pCylinder9.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1098112987769313032
 MeshRenderer:
@@ -7930,8 +7983,8 @@ GameObject:
   m_Name: pCylinder9.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1112816202104572901
 GameObject:
@@ -7946,7 +7999,7 @@ GameObject:
   m_Name: group1.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1114177237302796493
@@ -8262,8 +8315,8 @@ GameObject:
   m_Name: pCylinder10.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1163251338938601739
 MeshFilter:
@@ -8289,8 +8342,8 @@ GameObject:
   m_Name: pCylinder11.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1166899293088684216
 MeshFilter:
@@ -8324,8 +8377,8 @@ GameObject:
   m_Name: pCube9.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1168555802616446192
 GameObject:
@@ -8362,8 +8415,8 @@ GameObject:
   m_Name: pCube8.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1176123036631116909
 MeshRenderer:
@@ -8442,8 +8495,8 @@ GameObject:
   m_Name: polySurface9.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1200159301843031735
 Transform:
@@ -9008,8 +9061,8 @@ GameObject:
   m_Name: pCube10.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1261382980990058865
 MeshFilter:
@@ -9035,8 +9088,8 @@ GameObject:
   m_Name: pCylinder10.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1267041771224028063
 MeshFilter:
@@ -9134,8 +9187,8 @@ GameObject:
   m_Name: pCube10.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1285860291602910411
 Transform:
@@ -9187,8 +9240,8 @@ GameObject:
   m_Name: pCube27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1291025665579853783
 GameObject:
@@ -9233,8 +9286,8 @@ GameObject:
   m_Name: pCube9.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1300074766171225218
 GameObject:
@@ -9249,7 +9302,7 @@ GameObject:
   m_Name: group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1301911669226800257
@@ -9375,8 +9428,8 @@ GameObject:
   m_Name: pCube8.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1316243192952765404
 MeshFilter:
@@ -9417,8 +9470,8 @@ GameObject:
   m_Name: pCube9.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1319355110478748455
 MeshRenderer:
@@ -9478,8 +9531,8 @@ GameObject:
   m_Name: pCylinder12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1326786239871988119
 MeshFilter:
@@ -9520,8 +9573,8 @@ GameObject:
   m_Name: pCube33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1336283837034989268
 Transform:
@@ -9566,7 +9619,7 @@ GameObject:
   m_Name: Silla_TARGET.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1345603043058248022
@@ -9864,8 +9917,8 @@ GameObject:
   m_Name: pCylinder9.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1382259894921362558
 MeshRenderer:
@@ -9925,8 +9978,8 @@ GameObject:
   m_Name: pCylinder13.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1383202608697928373
 GameObject:
@@ -9978,8 +10031,8 @@ GameObject:
   m_Name: pCylinder10.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1408128379613449177
 MeshFilter:
@@ -10021,8 +10074,8 @@ GameObject:
   m_Name: pCylinder13.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1425590765836039947
 MeshFilter:
@@ -10090,8 +10143,8 @@ GameObject:
   m_Name: pCylinder13.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1441640444514024757
 MeshRenderer:
@@ -10326,8 +10379,8 @@ GameObject:
   m_Name: pCylinder9.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1486434758591870480
 Transform:
@@ -10615,8 +10668,8 @@ GameObject:
   m_Name: pCylinder13.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1542794448681420426
 Transform:
@@ -10754,8 +10807,8 @@ GameObject:
   m_Name: pCylinder12.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1560322015817415098
 MeshFilter:
@@ -10797,7 +10850,7 @@ GameObject:
   m_Name: group2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1567774145271474091
@@ -10816,8 +10869,8 @@ GameObject:
   m_Name: pCube7.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1575832218315721340
 GameObject:
@@ -10867,8 +10920,8 @@ GameObject:
   m_Name: pCube7.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1589411274715610865
 Transform:
@@ -10901,8 +10954,8 @@ GameObject:
   m_Name: pCube8.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1597300094211270296
 MeshFilter:
@@ -10992,7 +11045,7 @@ GameObject:
   m_Name: Silla_TARGET.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1623618876594227987
@@ -11103,7 +11156,7 @@ GameObject:
   m_Name: Banca39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &1648063673055907061
@@ -11142,7 +11195,7 @@ GameObject:
   m_Name: Mesa_TARGET.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1666425921289910867
@@ -11360,8 +11413,8 @@ GameObject:
   m_Name: pCylinder13.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1696572670815690875
 MeshFilter:
@@ -11558,8 +11611,8 @@ GameObject:
   m_Name: pCylinder11.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1748067667490999763
 Transform:
@@ -11611,8 +11664,8 @@ GameObject:
   m_Name: pCube7.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1770126485628328962
 MonoBehaviour:
@@ -11728,7 +11781,7 @@ GameObject:
   m_Name: Libreros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &1795385375352265416
@@ -11755,8 +11808,8 @@ GameObject:
   m_Name: pCylinder12.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1796625433674431357
 Transform:
@@ -11831,8 +11884,8 @@ GameObject:
   m_Name: pCube10.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1804436464601764021
 GameObject:
@@ -12061,8 +12114,8 @@ GameObject:
   m_Name: pCube26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1859443231302819713
 GameObject:
@@ -12080,8 +12133,8 @@ GameObject:
   m_Name: pCylinder10.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1862204321840727139
 MeshRenderer:
@@ -12141,8 +12194,8 @@ GameObject:
   m_Name: pCube8.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1865127581051730753
 MeshFilter:
@@ -12210,8 +12263,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1871519287686640686
 GameObject:
@@ -12229,8 +12282,8 @@ GameObject:
   m_Name: pCylinder10.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1871720700713491367
 GameObject:
@@ -12662,8 +12715,8 @@ GameObject:
   m_Name: pCube10.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!108 &1933775835480648311
 Light:
@@ -12743,7 +12796,7 @@ GameObject:
   m_Name: SeguroP2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1943571585294719492
@@ -12762,8 +12815,8 @@ GameObject:
   m_Name: pCylinder10.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1948256202585971499
 MeshRenderer:
@@ -12915,8 +12968,8 @@ GameObject:
   m_Name: pCube7.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1967462643960793360
 Transform:
@@ -13601,8 +13654,8 @@ GameObject:
   m_Name: pCylinder11.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2081154461591389503
 Transform:
@@ -13677,8 +13730,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCylinder12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2096852260055769589
 MeshFilter:
@@ -13818,8 +13871,8 @@ GameObject:
   m_Name: pCube9.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2103021224812208803
 MeshFilter:
@@ -13929,8 +13982,8 @@ GameObject:
   m_Name: pCylinder9.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2110640656523892169
 MeshRenderer:
@@ -14032,8 +14085,8 @@ GameObject:
   m_Name: pCube9.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2119285994074548776
 MeshFilter:
@@ -14216,8 +14269,8 @@ GameObject:
   m_Name: pCube8.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2149201607115799141
 MeshFilter:
@@ -14373,8 +14426,8 @@ GameObject:
   m_Name: pCylinder11.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2169281707628763651
 Transform:
@@ -14484,8 +14537,8 @@ GameObject:
   m_Name: CuerpoP1.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2190975522258204800
 Transform:
@@ -14602,8 +14655,8 @@ GameObject:
   m_Name: pCube9.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2217461171404169194
 GameObject:
@@ -14674,8 +14727,8 @@ GameObject:
   m_Name: pCylinder9.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2236526792481282083
 GameObject:
@@ -14777,7 +14830,7 @@ GameObject:
   m_Name: Silla_TARGET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2259638507653145945
@@ -15079,7 +15132,7 @@ GameObject:
   m_Name: Silla_TARGET.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &2308549759518063029
@@ -15171,7 +15224,7 @@ GameObject:
   m_Name: Mesa_TARGET.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &2326677131233490052
@@ -15227,8 +15280,8 @@ GameObject:
   m_Name: pCube36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2355900357754647202
 MeshFilter:
@@ -15403,8 +15456,8 @@ GameObject:
   m_Name: pCylinder15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2373290629528215346
 MeshFilter:
@@ -15430,8 +15483,8 @@ GameObject:
   m_Name: pCube7.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2376886533835819021
 GameObject:
@@ -15483,8 +15536,8 @@ GameObject:
   m_Name: pCube9.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2385267708434165773
 MeshFilter:
@@ -15745,8 +15798,8 @@ GameObject:
   m_Name: pCylinder12.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2401394994724881388
 GameObject:
@@ -15764,8 +15817,8 @@ GameObject:
   m_Name: pCube7.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2403276221472689731
 GameObject:
@@ -15783,8 +15836,8 @@ GameObject:
   m_Name: polySurface9.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2404643455636252349
 MeshFilter:
@@ -16077,8 +16130,8 @@ GameObject:
   m_Name: pCylinder10.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2488980437232105403
 GameObject:
@@ -16096,8 +16149,8 @@ GameObject:
   m_Name: pCube8.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2493183857649166247
 Transform:
@@ -16199,8 +16252,8 @@ GameObject:
   m_Name: pCube7.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2506180735263838549
 MeshFilter:
@@ -16241,8 +16294,8 @@ GameObject:
   m_Name: pCube10.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2523806218872850631
 GameObject:
@@ -16257,7 +16310,7 @@ GameObject:
   m_Name: Mesa_TARGET.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!108 &2526705688688208339
@@ -16411,7 +16464,7 @@ GameObject:
   m_Name: Silla_TARGET.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2541124021612702374
@@ -16842,8 +16895,8 @@ GameObject:
   m_Name: pCube10.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2599070927702478692
 Transform:
@@ -16873,7 +16926,7 @@ GameObject:
   m_Name: Banca16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2612540919018962077
@@ -16949,8 +17002,8 @@ GameObject:
   m_Name: pCylinder9.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2627747795497424514
 GameObject:
@@ -16968,8 +17021,8 @@ GameObject:
   m_Name: pCylinder13.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2629814242382732947
 Transform:
@@ -17162,8 +17215,8 @@ GameObject:
   m_Name: pCube9.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2659716639692891921
 MeshFilter:
@@ -17204,8 +17257,8 @@ GameObject:
   m_Name: pCube7.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2665759495696579470
 GameObject:
@@ -17220,7 +17273,7 @@ GameObject:
   m_Name: Banca17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &2671354286761095168
@@ -17273,8 +17326,8 @@ GameObject:
   m_Name: polySurface9.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2675600521685268802
 MeshFilter:
@@ -17455,8 +17508,8 @@ GameObject:
   m_Name: pCylinder11.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2697626134932045081
 Transform:
@@ -17747,8 +17800,8 @@ GameObject:
   m_Name: pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2719370383352937902
 GameObject:
@@ -17945,8 +17998,8 @@ GameObject:
   m_Name: pCylinder10.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2785869622094547751
 MeshRenderer:
@@ -18056,8 +18109,8 @@ GameObject:
   m_Name: pCylinder9.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2796048527536586773
 GameObject:
@@ -18227,8 +18280,8 @@ GameObject:
   m_Name: polySurface9.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2823983931730784861
 GameObject:
@@ -18246,8 +18299,8 @@ GameObject:
   m_Name: pCube9.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2827849458827157235
 Transform:
@@ -18470,7 +18523,7 @@ GameObject:
   m_Name: Silla_TARGET.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &2844178075924498645
@@ -18619,8 +18672,8 @@ GameObject:
   m_Name: pCylinder9.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2862437302687339766
 MeshFilter:
@@ -18872,8 +18925,8 @@ GameObject:
   m_Name: pCylinder9.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2885673123775415833
 GameObject:
@@ -18891,8 +18944,8 @@ GameObject:
   m_Name: pCube35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2886685062126960028
 MeshRenderer:
@@ -18957,7 +19010,7 @@ GameObject:
   m_Name: Mesa_TARGET.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &2891474246189963212
@@ -19045,8 +19098,8 @@ GameObject:
   m_Name: pCylinder12.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2901783259340573166
 MeshFilter:
@@ -19296,7 +19349,7 @@ GameObject:
   m_Name: Silla_TARGET.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &2923177131843256018
@@ -19365,8 +19418,8 @@ GameObject:
   m_Name: pCylinder11.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2942971534845020125
 Transform:
@@ -19459,8 +19512,8 @@ GameObject:
   m_Name: CuerpoP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2963667541714946159
 Transform:
@@ -19523,8 +19576,8 @@ GameObject:
   m_Name: pCube9.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2971297129946039387
 GameObject:
@@ -19542,8 +19595,8 @@ GameObject:
   m_Name: pCube10.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2984787511514271875
 Transform:
@@ -19677,7 +19730,7 @@ GameObject:
   m_Name: Lockers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3003691196277431357
@@ -19795,8 +19848,8 @@ GameObject:
   m_Name: pCylinder11.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3018133379289819042
 GameObject:
@@ -19814,8 +19867,8 @@ GameObject:
   m_Name: pCylinder10.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3019717809042055166
 MeshFilter:
@@ -19841,8 +19894,8 @@ GameObject:
   m_Name: pCube10.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3024939505789411555
 MeshRenderer:
@@ -19917,8 +19970,8 @@ GameObject:
   m_Name: polySurface9.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3033332366732656894
 GameObject:
@@ -20012,8 +20065,8 @@ GameObject:
   m_Name: pCube7.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3069719925545418797
 Transform:
@@ -20052,8 +20105,8 @@ GameObject:
   m_Name: polySurface9.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3080434496867269527
 MeshRenderer:
@@ -20113,8 +20166,8 @@ GameObject:
   m_Name: polySurface9.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3092254297736807496
 GameObject:
@@ -20132,8 +20185,8 @@ GameObject:
   m_Name: pCylinder13.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3092254297736807497
 MeshCollider:
@@ -20165,8 +20218,8 @@ GameObject:
   m_Name: pCylinder12.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3095136106195567325
 Transform:
@@ -20199,8 +20252,8 @@ GameObject:
   m_Name: pCube9.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3117686923376133761
 GameObject:
@@ -20269,8 +20322,8 @@ GameObject:
   m_Name: pCylinder13.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3139047215740332721
 GameObject:
@@ -20285,7 +20338,7 @@ GameObject:
   m_Name: Mesa_TARGET.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3143120968658586527
@@ -20567,7 +20620,7 @@ GameObject:
   m_Name: Banca30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3179631450585092277
@@ -20644,8 +20697,8 @@ GameObject:
   m_Name: pCube10.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3186399043950981932
 MeshCollider:
@@ -20719,8 +20772,8 @@ GameObject:
   m_Name: pCylinder10.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3188504650688268443
 MeshRenderer:
@@ -20827,7 +20880,7 @@ GameObject:
   m_Name: Banca19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3213376221189202101
@@ -20881,8 +20934,8 @@ GameObject:
   m_Name: pCylinder10.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3220147573019742594
 Transform:
@@ -20921,8 +20974,8 @@ GameObject:
   m_Name: pCube7.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3225227802970575465
 MeshRenderer:
@@ -20979,7 +21032,7 @@ GameObject:
   m_Name: Mesa_TARGET.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3237751019728700527
@@ -20998,8 +21051,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCylinder10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3238458343205813291
 GameObject:
@@ -21017,8 +21070,8 @@ GameObject:
   m_Name: pCylinder10.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3242399700210661201
 Transform:
@@ -21136,7 +21189,7 @@ GameObject:
   m_Name: Banca33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3258899083904895425
@@ -21271,7 +21324,7 @@ GameObject:
   m_Name: Silla_TARGET.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &3289457457388116809
@@ -21298,8 +21351,8 @@ GameObject:
   m_Name: pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3290811456416648265
 MeshFilter:
@@ -21474,8 +21527,8 @@ GameObject:
   m_Name: pCube9.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3316881789211742962
 GameObject:
@@ -21490,7 +21543,7 @@ GameObject:
   m_Name: Banca4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &3318291522370511000
@@ -21643,8 +21696,8 @@ GameObject:
   m_Name: pCylinder9.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3340903208234776091
 Transform:
@@ -21699,8 +21752,8 @@ GameObject:
   m_Name: pCylinder13.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3355119393676049675
 MeshFilter:
@@ -21871,8 +21924,8 @@ GameObject:
   m_Name: pCylinder12.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3390254901955571752
 MeshRenderer:
@@ -22031,8 +22084,8 @@ GameObject:
   m_Name: polySurface9.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3401090553698562034
 MeshFilter:
@@ -22154,8 +22207,8 @@ GameObject:
   m_Name: pCylinder12.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3419712743777450547
 MeshFilter:
@@ -22330,8 +22383,8 @@ GameObject:
   m_Name: pCylinder10.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3446416095628477812
 Transform:
@@ -22470,8 +22523,8 @@ GameObject:
   m_Name: pCube7.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3454364539845021424
 GameObject:
@@ -22489,8 +22542,8 @@ GameObject:
   m_Name: polySurface9.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3454364539845021425
 MeshCollider:
@@ -22522,8 +22575,8 @@ GameObject:
   m_Name: pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3463543223008917006
 GameObject:
@@ -22708,7 +22761,7 @@ GameObject:
   m_Name: Silla_TARGET.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3485190488207537162
@@ -22791,8 +22844,8 @@ GameObject:
   m_Name: pCube8.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3508285065049238505
 Transform:
@@ -22822,7 +22875,7 @@ GameObject:
   m_Name: Banca31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3524095343372707640
@@ -23117,8 +23170,8 @@ GameObject:
   m_Name: pCylinder13.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3575991837507167710
 MeshFilter:
@@ -23218,7 +23271,7 @@ GameObject:
   m_Name: SeguroP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3592311066934224053
@@ -23256,8 +23309,8 @@ GameObject:
   m_Name: polySurface9.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3609444613805607411
 GameObject:
@@ -23275,8 +23328,8 @@ GameObject:
   m_Name: pCube7.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3612406215096876848
 GameObject:
@@ -23386,7 +23439,7 @@ GameObject:
   m_Name: Banca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3626540289966154304
@@ -23447,8 +23500,8 @@ GameObject:
   m_Name: pCylinder12.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3633414639510848584
 MeshCollider:
@@ -23844,8 +23897,8 @@ GameObject:
   m_Name: pCube8.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3702212559241912502
 GameObject:
@@ -24096,8 +24149,8 @@ GameObject:
   m_Name: pCube8.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3743505077219181934
 MeshFilter:
@@ -24120,7 +24173,7 @@ GameObject:
   m_Name: Silla_TARGET.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3751487952991685940
@@ -24139,8 +24192,8 @@ GameObject:
   m_Name: pCube7.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3754911124773562267
 GameObject:
@@ -24155,7 +24208,7 @@ GameObject:
   m_Name: Mesa_TARGET.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3757443990028762974
@@ -24174,8 +24227,8 @@ GameObject:
   m_Name: pCylinder10.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3757996128823670403
 GameObject:
@@ -24190,7 +24243,7 @@ GameObject:
   m_Name: Mesa_TARGET.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &3761577597336377655
@@ -24209,8 +24262,8 @@ GameObject:
   m_Name: pCylinder11.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3761651230082194958
 GameObject:
@@ -24228,8 +24281,8 @@ GameObject:
   m_Name: pCube8.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3765622096190586197
 MeshFilter:
@@ -24363,8 +24416,8 @@ GameObject:
   m_Name: pCylinder11.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3783116363273243236
 Transform:
@@ -24496,8 +24549,8 @@ GameObject:
   m_Name: polySurface9.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3829797089857881589
 MeshRenderer:
@@ -24562,7 +24615,7 @@ GameObject:
   m_Name: Mesa_TARGET.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3840512048606494166
@@ -24631,8 +24684,8 @@ GameObject:
   m_Name: pCylinder9.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3843746555104947302
 MeshFilter:
@@ -25199,8 +25252,8 @@ GameObject:
   m_Name: pCylinder10.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3963412093497477154
 MeshFilter:
@@ -25303,8 +25356,8 @@ GameObject:
   m_Name: pCylinder10.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3981915865096556771
 GameObject:
@@ -25319,7 +25372,7 @@ GameObject:
   m_Name: Mesa_TARGET.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &3984475349957668708
@@ -25343,7 +25396,7 @@ GameObject:
   m_Name: Locker1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3988183464367353942
@@ -25412,8 +25465,8 @@ GameObject:
   m_Name: pCylinder13.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4004364569372122116
 MeshRenderer:
@@ -25496,8 +25549,8 @@ GameObject:
   m_Name: polySurface9.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &4012664768372050822
 GameObject:
@@ -25515,8 +25568,8 @@ GameObject:
   m_Name: pCube8.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4023779937443757881
 MeshFilter:
@@ -25581,8 +25634,8 @@ GameObject:
   m_Name: pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4038858717290761961
 MeshFilter:
@@ -25853,8 +25906,8 @@ GameObject:
   m_Name: pCylinder13.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4075463975135756984
 MeshFilter:
@@ -25998,8 +26051,8 @@ GameObject:
   m_Name: polySurface9.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4111994693682460845
 MeshCollider:
@@ -26256,7 +26309,7 @@ GameObject:
   m_Name: Banca3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &4138211072241041545
@@ -26398,7 +26451,7 @@ GameObject:
   m_Name: Banca29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4164316396631078475
@@ -26422,7 +26475,7 @@ GameObject:
   m_Name: Mesa_TARGET.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4164617645326400219
@@ -26579,7 +26632,7 @@ GameObject:
   m_Name: Banca32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4185705322453763734
@@ -26626,7 +26679,7 @@ GameObject:
   m_Name: Mesa_TARGET.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4197049044795928473
@@ -27152,8 +27205,8 @@ GameObject:
   m_Name: pCylinder11.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4262687100255737249
 Transform:
@@ -27206,7 +27259,7 @@ GameObject:
   m_Name: Silla_TARGET.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &4267959611829261566
@@ -27401,8 +27454,8 @@ GameObject:
   m_Name: pCylinder9.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4296965211572460294
 Transform:
@@ -27587,7 +27640,7 @@ GameObject:
   m_Name: Banca5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4343101653563403652
@@ -27708,8 +27761,8 @@ GameObject:
   m_Name: pCylinder9.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &4365716942931771471
 GameObject:
@@ -27727,8 +27780,8 @@ GameObject:
   m_Name: pCylinder10.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4368530997489425449
 Transform:
@@ -27822,8 +27875,8 @@ GameObject:
   m_Name: pCylinder11.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4380058614819021392
 MeshFilter:
@@ -27866,8 +27919,8 @@ GameObject:
   m_Name: polySurface9.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4392668858565073783
 MeshRenderer:
@@ -28183,8 +28236,8 @@ GameObject:
   m_Name: pCube9.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4419755013190837779
 MeshFilter:
@@ -28522,7 +28575,7 @@ GameObject:
   m_Name: Banca37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4469200241128041974
@@ -28541,8 +28594,8 @@ GameObject:
   m_Name: pCube10.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4472686325671294795
 MeshFilter:
@@ -28610,8 +28663,8 @@ GameObject:
   m_Name: pCylinder13.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4479939763432890437
 MeshCollider:
@@ -28743,7 +28796,7 @@ GameObject:
   m_Name: Mesa_TARGET.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4505868452900711389
@@ -28759,7 +28812,7 @@ GameObject:
   m_Name: Mesa_TARGET.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4508898334715955368
@@ -28791,7 +28844,7 @@ GameObject:
   m_Name: Mesa_TARGET.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4511251380542941163
@@ -28810,8 +28863,8 @@ GameObject:
   m_Name: pCube8.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4512344370168856737
 MeshFilter:
@@ -29003,8 +29056,8 @@ GameObject:
   m_Name: pCube10.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4543031786702610600
 MeshRenderer:
@@ -29312,8 +29365,8 @@ GameObject:
   m_Name: pCylinder11.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4569133980477949494
 MeshRenderer:
@@ -29433,8 +29486,8 @@ GameObject:
   m_Name: pCube7.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4583773278396256859
 MeshFilter:
@@ -29640,8 +29693,8 @@ GameObject:
   m_Name: pCube8.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4625913592916984278
 MeshFilter:
@@ -29724,8 +29777,8 @@ GameObject:
   m_Name: pCube8.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4653029392129972513
 MeshCollider:
@@ -29799,8 +29852,8 @@ GameObject:
   m_Name: pCube10.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4655376271854233019
 MeshCollider:
@@ -29983,8 +30036,8 @@ GameObject:
   m_Name: pCube8.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4668588316094135591
 MeshFilter:
@@ -30111,8 +30164,8 @@ GameObject:
   m_Name: pCube8.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4687830501613585819
 MeshCollider:
@@ -30144,8 +30197,8 @@ GameObject:
   m_Name: pCylinder13.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4688649724195769756
 Transform:
@@ -30471,7 +30524,7 @@ GameObject:
   m_Name: Banca8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4720762697912187418
@@ -30555,8 +30608,8 @@ GameObject:
   m_Name: pCylinder9.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4733188216832572864
 MeshFilter:
@@ -30678,7 +30731,7 @@ GameObject:
   m_Name: Banca1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4761820970686797092
@@ -30848,8 +30901,8 @@ GameObject:
   m_Name: pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4786468832017289594
 MeshRenderer:
@@ -31249,7 +31302,7 @@ GameObject:
   m_Name: BancaEstudiante_14:Silla_TARGET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4891949594420977392
@@ -31291,8 +31344,8 @@ GameObject:
   m_Name: pCylinder13.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4897974554993262417
 Transform:
@@ -31381,8 +31434,8 @@ GameObject:
   m_Name: pCube9.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4905331414743219656
 MeshCollider:
@@ -31661,8 +31714,8 @@ GameObject:
   m_Name: pCylinder10.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4957683022227245260
 MeshCollider:
@@ -31709,8 +31762,8 @@ GameObject:
   m_Name: pCylinder12.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4960937442309271074
 MeshRenderer:
@@ -31778,8 +31831,8 @@ GameObject:
   m_Name: pCylinder12.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4966730224971960115
 Transform:
@@ -31826,8 +31879,8 @@ GameObject:
   m_Name: pCylinder11.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4972045231833145136
 MeshCollider:
@@ -32175,7 +32228,7 @@ GameObject:
   m_Name: LibreroG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &5003183664318036150
@@ -32392,7 +32445,7 @@ GameObject:
   m_Name: group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &5056598801764424933
@@ -32411,8 +32464,8 @@ GameObject:
   m_Name: pCylinder12.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5057987055994993081
 MeshRenderer:
@@ -32486,8 +32539,8 @@ GameObject:
   m_Name: pCube10.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5068873750795425362
 MeshFilter:
@@ -32898,8 +32951,8 @@ GameObject:
   m_Name: pCube7.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5127782810821311926
 MeshRenderer:
@@ -33023,8 +33076,8 @@ GameObject:
   m_Name: BancaEstudiante_14:polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5140319787913778705
 Transform:
@@ -33057,8 +33110,8 @@ GameObject:
   m_Name: pCylinder13.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5146500805050637055
 MeshFilter:
@@ -33145,8 +33198,8 @@ GameObject:
   m_Name: pCube8.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5168416893046801452
 GameObject:
@@ -33164,8 +33217,8 @@ GameObject:
   m_Name: pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5170019405214000509
 MeshRenderer:
@@ -33233,8 +33286,8 @@ GameObject:
   m_Name: pCylinder11.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5173594851609457112
 MeshCollider:
@@ -33509,8 +33562,8 @@ GameObject:
   m_Name: pCylinder13.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5237981818157800229
 GameObject:
@@ -33622,7 +33675,7 @@ GameObject:
   m_Name: Banca15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &5256056431763176986
@@ -33683,8 +33736,8 @@ GameObject:
   m_Name: pCube10.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5264093450467091095
 Transform:
@@ -33934,8 +33987,8 @@ GameObject:
   m_Name: pCylinder10.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5308288681212838556
 MeshCollider:
@@ -34322,8 +34375,8 @@ GameObject:
   m_Name: pCylinder11.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5347155093814134260
 MeshCollider:
@@ -34472,8 +34525,8 @@ GameObject:
   m_Name: pCylinder10.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5375951080483335741
 MeshFilter:
@@ -34510,7 +34563,7 @@ GameObject:
   m_Name: Banca9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5395468361943890466
@@ -34548,8 +34601,8 @@ GameObject:
   m_Name: pCube9.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5408811630955135195
 GameObject:
@@ -35131,8 +35184,8 @@ GameObject:
   m_Name: pCylinder9.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5483733105046195013
 MeshCollider:
@@ -35248,8 +35301,8 @@ GameObject:
   m_Name: pCube7.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5491945847068895011
 GameObject:
@@ -35267,8 +35320,8 @@ GameObject:
   m_Name: pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5493925865429212069
 MeshRenderer:
@@ -35662,8 +35715,8 @@ GameObject:
   m_Name: pCylinder9.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5539388973231565146
 MeshFilter:
@@ -35689,8 +35742,8 @@ GameObject:
   m_Name: pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5546760833295159448
 MeshRenderer:
@@ -35899,7 +35952,7 @@ GameObject:
   m_Name: Banca11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &5610083317264213835
@@ -35937,8 +35990,8 @@ GameObject:
   m_Name: pCylinder9.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5612793092504026835
 Transform:
@@ -36034,8 +36087,8 @@ GameObject:
   m_Name: pCube25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5643784616580821311
 Transform:
@@ -36082,8 +36135,8 @@ GameObject:
   m_Name: pCylinder12.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5649826196197198971
 MeshFilter:
@@ -36159,8 +36212,8 @@ GameObject:
   m_Name: pCylinder13.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5654335865330150063
 MeshCollider:
@@ -36326,8 +36379,8 @@ GameObject:
   m_Name: pCylinder13.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5670148206563352715
 Transform:
@@ -36360,8 +36413,8 @@ GameObject:
   m_Name: pCylinder11.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5673389219285903523
 MeshCollider:
@@ -36623,8 +36676,8 @@ GameObject:
   m_Name: pCylinder12.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5701943685668514981
 Transform:
@@ -36859,7 +36912,7 @@ GameObject:
   m_Name: Silla_TARGET.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &5748934007524045990
@@ -36947,8 +37000,8 @@ GameObject:
   m_Name: pCube9.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5762622967038973223
 MeshCollider:
@@ -37177,8 +37230,8 @@ GameObject:
   m_Name: pCylinder12.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5795880830742787568
 GameObject:
@@ -37193,7 +37246,7 @@ GameObject:
   m_Name: Mesa_TARGET.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &5807764146345804028
@@ -37410,8 +37463,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5825911890270213987
 Transform:
@@ -37446,8 +37499,8 @@ GameObject:
   m_Name: polySurface9.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5839047355217377257
 MeshRenderer:
@@ -37979,7 +38032,7 @@ GameObject:
   m_Name: Banca7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5899420883048081931
@@ -38013,8 +38066,8 @@ GameObject:
   m_Name: pCube9.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5903481335842565738
 MeshRenderer:
@@ -38605,8 +38658,8 @@ GameObject:
   m_Name: polySurface9.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5963741183039562458
 MeshFilter:
@@ -38654,8 +38707,8 @@ GameObject:
   m_Name: pCube8.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5971160340790153468
 Transform:
@@ -38700,8 +38753,8 @@ GameObject:
   m_Name: pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5982494013254865257
 MeshFilter:
@@ -38903,8 +38956,8 @@ GameObject:
   m_Name: pCube8.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6027159651832904522
 GameObject:
@@ -38974,7 +39027,7 @@ GameObject:
   m_Name: Silla_TARGET.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &6032455689582111296
@@ -39625,8 +39678,8 @@ GameObject:
   m_Name: pCube10.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6124043174528600397
 MeshCollider:
@@ -39704,8 +39757,8 @@ GameObject:
   m_Name: pCylinder10.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6150862784878146899
 Transform:
@@ -39774,8 +39827,8 @@ GameObject:
   m_Name: pCube7.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6155049520493697936
 MeshCollider:
@@ -39906,8 +39959,8 @@ GameObject:
   m_Name: pCylinder12.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6167176842869574807
 MeshRenderer:
@@ -40155,8 +40208,8 @@ GameObject:
   m_Name: pCube10.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6188974080040268685
 MeshFilter:
@@ -40252,8 +40305,8 @@ GameObject:
   m_Name: pCylinder9.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6200402660112281844
 MeshCollider:
@@ -40701,8 +40754,8 @@ GameObject:
   m_Name: pCube7.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6241549938339137444
 MeshRenderer:
@@ -40781,8 +40834,8 @@ GameObject:
   m_Name: pCylinder12.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6262472819770599664
 MeshCollider:
@@ -40984,8 +41037,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCylinder11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6303157857914506763
 MeshCollider:
@@ -41032,8 +41085,8 @@ GameObject:
   m_Name: pCube10.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6308609834320053194
 MeshCollider:
@@ -41232,8 +41285,8 @@ GameObject:
   m_Name: pCube7.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6337921205012134707
 MeshCollider:
@@ -41307,7 +41360,7 @@ GameObject:
   m_Name: Banca14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &6355895632981646556
@@ -41524,8 +41577,8 @@ GameObject:
   m_Name: pCylinder13.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6375374502817004681
 Transform:
@@ -41572,8 +41625,8 @@ GameObject:
   m_Name: pCylinder9.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6375509585365015803
 MeshCollider:
@@ -42336,7 +42389,7 @@ GameObject:
   m_Name: Mesa_TARGET.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &6477856262459203361
@@ -42355,8 +42408,8 @@ GameObject:
   m_Name: pCylinder9.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6481564157856866257
 GameObject:
@@ -42390,7 +42443,7 @@ GameObject:
   m_Name: Mesa_TARGET.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &6487126137109464303
@@ -42501,8 +42554,8 @@ GameObject:
   m_Name: pCylinder12.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6496911675322175076
 MeshCollider:
@@ -42557,8 +42610,8 @@ GameObject:
   m_Name: polySurface9.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6511132752257054994
 MeshRenderer:
@@ -43030,8 +43083,8 @@ GameObject:
   m_Name: pCube8.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6588509812996084714
 MeshFilter:
@@ -43183,8 +43236,8 @@ GameObject:
   m_Name: pCylinder11.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6594317371765226758
 GameObject:
@@ -43280,7 +43333,7 @@ GameObject:
   m_Name: SeguroP1.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6598741351544383180
@@ -43583,7 +43636,7 @@ GameObject:
   m_Name: Mesa_TARGET.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6657174778456368974
@@ -43636,7 +43689,7 @@ GameObject:
   m_Name: Silla_TARGET.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &6664651720017693205
@@ -43694,7 +43747,7 @@ GameObject:
   m_Name: Silla_TARGET.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &6679918197224097562
@@ -43713,8 +43766,8 @@ GameObject:
   m_Name: pCube7.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6683169106360115776
 Transform:
@@ -43795,8 +43848,8 @@ GameObject:
   m_Name: polySurface9.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6706185532728943695
 MeshFilter:
@@ -44229,8 +44282,8 @@ GameObject:
   m_Name: pCylinder11.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6761292699974526037
 MeshCollider:
@@ -44362,8 +44415,8 @@ GameObject:
   m_Name: pCube10.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6773685096378300424
 MeshCollider:
@@ -44786,8 +44839,8 @@ GameObject:
   m_Name: pCube8.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6818219339331939263
 MeshCollider:
@@ -45084,8 +45137,8 @@ GameObject:
   m_Name: pCylinder13.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6873516782089089059
 MeshCollider:
@@ -45201,8 +45254,8 @@ GameObject:
   m_Name: pCube7.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6888790255186468506
 MeshCollider:
@@ -45234,8 +45287,8 @@ GameObject:
   m_Name: CuerpoP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6895648407384527304
 MeshCollider:
@@ -45524,8 +45577,8 @@ GameObject:
   m_Name: pCube8.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6946025762270661412
 MeshCollider:
@@ -45629,8 +45682,8 @@ GameObject:
   m_Name: pCube7.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6964269777135186126
 MeshRenderer:
@@ -45690,8 +45743,8 @@ GameObject:
   m_Name: pCube9.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6966261537769818945
 MeshFilter:
@@ -45714,7 +45767,7 @@ GameObject:
   m_Name: Silla_TARGET.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &6976945128571251246
@@ -46003,8 +46056,8 @@ GameObject:
   m_Name: pCube9.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7018968064389053574
 MeshCollider:
@@ -46133,8 +46186,8 @@ GameObject:
   m_Name: pCylinder12.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7050907839045248261
 Transform:
@@ -46179,7 +46232,7 @@ GameObject:
   m_Name: Mesa_TARGET.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7074382624910113586
@@ -46213,8 +46266,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCylinder9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7074896874641425992
 MeshCollider:
@@ -47036,7 +47089,7 @@ GameObject:
   m_Name: Mesa_TARGET.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &7174028813280570607
@@ -47377,8 +47430,8 @@ GameObject:
   m_Name: pCylinder13.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7209545390983677728
 Transform:
@@ -47476,7 +47529,7 @@ GameObject:
   m_Name: Banca34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7222341092072725203
@@ -47510,8 +47563,8 @@ GameObject:
   m_Name: pCube10.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7223936046177595097
 MeshCollider:
@@ -47543,8 +47596,8 @@ GameObject:
   m_Name: pCylinder13.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7232498517041987307
 MeshRenderer:
@@ -47779,8 +47832,8 @@ GameObject:
   m_Name: pCylinder12.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7237568599943367858
 MeshCollider:
@@ -47812,8 +47865,8 @@ GameObject:
   m_Name: polySurface9.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7251074507178880011
 MeshCollider:
@@ -47845,8 +47898,8 @@ GameObject:
   m_Name: pCube9.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7257620489036401929
 MeshRenderer:
@@ -47906,8 +47959,8 @@ GameObject:
   m_Name: pCube10.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7258291724772414174
 MeshCollider:
@@ -48071,8 +48124,8 @@ GameObject:
   m_Name: polySurface9.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7287638183402243228
 MeshCollider:
@@ -48234,8 +48287,8 @@ GameObject:
   m_Name: pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7306238389411640882
 MeshCollider:
@@ -48264,7 +48317,7 @@ GameObject:
   m_Name: Mesa_TARGET.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &7316502199904671366
@@ -48494,8 +48547,8 @@ GameObject:
   m_Name: pCube7.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7336615022399506520
 MeshCollider:
@@ -48527,8 +48580,8 @@ GameObject:
   m_Name: pCube8.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7338029112493504102
 MeshCollider:
@@ -48594,8 +48647,8 @@ GameObject:
   m_Name: pCylinder11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7346896224994858524
 Transform:
@@ -48628,8 +48681,8 @@ GameObject:
   m_Name: pCube10.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7357017950340136730
 MeshFilter:
@@ -48685,7 +48738,7 @@ GameObject:
   m_Name: Mesa_TARGET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &7361265785996324783
@@ -48820,8 +48873,8 @@ GameObject:
   m_Name: pCylinder9.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7373964299726712046
 MeshCollider:
@@ -48915,8 +48968,8 @@ GameObject:
   m_Name: pCylinder10.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7391712709913851732
 MeshCollider:
@@ -48989,8 +49042,8 @@ GameObject:
   m_Name: pCylinder11.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7403380839525169907
 MeshCollider:
@@ -49056,7 +49109,7 @@ GameObject:
   m_Name: Banca38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &7416865009610881108
@@ -49075,8 +49128,8 @@ GameObject:
   m_Name: pCylinder12.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7416865009610881109
 MeshCollider:
@@ -49443,8 +49496,8 @@ GameObject:
   m_Name: polySurface9.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7448480100793048949
 MeshCollider:
@@ -49491,8 +49544,8 @@ GameObject:
   m_Name: pCylinder11.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7450235208954127248
 GameObject:
@@ -49510,8 +49563,8 @@ GameObject:
   m_Name: pCylinder11.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7451210947334223167
 MeshFilter:
@@ -49548,7 +49601,7 @@ GameObject:
   m_Name: Silla_TARGET.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &7460100623575847250
@@ -49567,8 +49620,8 @@ GameObject:
   m_Name: pCube9.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7460100623575847251
 MeshCollider:
@@ -49747,7 +49800,7 @@ GameObject:
   m_Name: Silla_TARGET.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &7475490158098725595
@@ -49788,8 +49841,8 @@ GameObject:
   m_Name: pCylinder10.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7476347175360513568
 MeshCollider:
@@ -49840,8 +49893,8 @@ GameObject:
   m_Name: pCube9.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7477754682191930109
 MeshCollider:
@@ -50033,7 +50086,7 @@ GameObject:
   m_Name: Banca12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7504133901311473455
@@ -50067,8 +50120,8 @@ GameObject:
   m_Name: pCube10.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7504710622635258619
 GameObject:
@@ -50303,7 +50356,7 @@ GameObject:
   m_Name: Silla_TARGET.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &7527503689765719783
@@ -50393,8 +50446,8 @@ GameObject:
   m_Name: pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7531864094641966147
 MeshCollider:
@@ -50423,7 +50476,7 @@ GameObject:
   m_Name: Banca10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &7537109726081956929
@@ -50439,7 +50492,7 @@ GameObject:
   m_Name: Banca2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7542757814946460470
@@ -50509,8 +50562,8 @@ GameObject:
   m_Name: pCube9.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7560440139752503259
 MeshCollider:
@@ -50671,8 +50724,8 @@ GameObject:
   m_Name: polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7586260073067165980
 GameObject:
@@ -50966,8 +51019,8 @@ GameObject:
   m_Name: pCube7.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7612123513522321971
 GameObject:
@@ -51358,8 +51411,8 @@ GameObject:
   m_Name: pCylinder9.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7663471221529556749
 MeshCollider:
@@ -51464,7 +51517,7 @@ GameObject:
   m_Name: Mesa_TARGET.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &7700299176215187978
@@ -51704,8 +51757,8 @@ GameObject:
   m_Name: pCube8.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7733238359311835982
 MeshCollider:
@@ -52211,7 +52264,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7822504001640616817
 Transform:
@@ -52624,8 +52677,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7903312892429313284
 MeshFilter:
@@ -52691,7 +52744,7 @@ GameObject:
   m_Name: Silla_TARGET.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7917742902017442294
@@ -52824,8 +52877,8 @@ GameObject:
   m_Name: pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7945610149218227617
 MeshFilter:
@@ -52865,8 +52918,8 @@ GameObject:
   m_Name: pCube8.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7945757857287126716
 MeshCollider:
@@ -52986,8 +53039,8 @@ GameObject:
   m_Name: pCube7.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7980854624162984790
 MeshCollider:
@@ -53758,8 +53811,8 @@ GameObject:
   m_Name: pCylinder13.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8067657084605654676
 MeshCollider:
@@ -53933,8 +53986,8 @@ GameObject:
   m_Name: pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8096154728109337430
 MeshCollider:
@@ -54450,8 +54503,8 @@ GameObject:
   m_Name: pCylinder11.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8152645440865998098
 MeshCollider:
@@ -54682,8 +54735,8 @@ GameObject:
   m_Name: pCube9.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8184802258216454092
 MeshCollider:
@@ -54899,8 +54952,8 @@ GameObject:
   m_Name: pCylinder13.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8200250657904972735
 MeshCollider:
@@ -55003,8 +55056,8 @@ GameObject:
   m_Name: pCylinder12.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8210123307140829160
 MeshCollider:
@@ -55382,8 +55435,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8234372606069917346
 MeshCollider:
@@ -55513,8 +55566,8 @@ GameObject:
   m_Name: pCube10.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8252510383744107485
 MeshFilter:
@@ -55573,8 +55626,8 @@ GameObject:
   m_Name: CuerpoP2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8258604787667438397
 MeshCollider:
@@ -56111,8 +56164,8 @@ GameObject:
   m_Name: polySurface9.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8320432523846617178
 MeshCollider:
@@ -56341,8 +56394,8 @@ GameObject:
   m_Name: polySurface9.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &8331679607770167278
 MeshRenderer:
@@ -56416,8 +56469,8 @@ GameObject:
   m_Name: pCylinder12.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8331691592134243752
 MeshCollider:
@@ -56507,8 +56560,8 @@ GameObject:
   m_Name: pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8336274414649739212
 MeshCollider:
@@ -56755,7 +56808,7 @@ GameObject:
   m_Name: Mesa_TARGET.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &8371275371712722882
@@ -57057,8 +57110,8 @@ GameObject:
   m_Name: pCylinder12.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8415694138241958001
 MeshCollider:
@@ -57288,8 +57341,8 @@ GameObject:
   m_Name: pCube10.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8440658248748615873
 MeshCollider:
@@ -57528,8 +57581,8 @@ GameObject:
   m_Name: pCylinder11.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8471434824249723627
 MeshFilter:
@@ -58372,8 +58425,8 @@ GameObject:
   m_Name: pCube10.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8564234955804010184
 MeshCollider:
@@ -58458,7 +58511,7 @@ GameObject:
   m_Name: Silla_TARGET.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &8574750670614908041
@@ -58566,8 +58619,8 @@ GameObject:
   m_Name: pCylinder12.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8588680469639230578
 MeshCollider:
@@ -58596,7 +58649,7 @@ GameObject:
   m_Name: Silla_TARGET.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &8593688809198698253
@@ -59285,7 +59338,7 @@ GameObject:
   m_Name: Mesa_TARGET.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8658617131634450274
@@ -59325,8 +59378,8 @@ GameObject:
   m_Name: pCube10.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8659456094468109022
 MeshCollider:
@@ -59358,8 +59411,8 @@ GameObject:
   m_Name: pCylinder12.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8672699125073645271
 MeshCollider:
@@ -59436,7 +59489,7 @@ GameObject:
   m_Name: Locker2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8683976618878303495
@@ -59538,8 +59591,8 @@ GameObject:
   m_Name: pCylinder10.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8698863732018783841
 MeshCollider:
@@ -59585,7 +59638,7 @@ GameObject:
   m_Name: Banca6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &8716111947551178192
@@ -59637,8 +59690,8 @@ GameObject:
   m_Name: pCube7.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8720472093140752188
 MeshCollider:
@@ -59930,7 +59983,7 @@ GameObject:
   m_Name: Silla_TARGET.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8754024159546356693
@@ -60459,7 +60512,7 @@ GameObject:
   m_Name: Silla_TARGET.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8775297795254509134
@@ -60584,8 +60637,8 @@ GameObject:
   m_Name: pCylinder10.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &8787297774882022995
 MeshRenderer:
@@ -60659,8 +60712,8 @@ GameObject:
   m_Name: pCylinder10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8790424107284105226
 MeshCollider:
@@ -60891,8 +60944,8 @@ GameObject:
   m_Name: pCube7.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8825629989428226656
 MeshCollider:
@@ -61257,7 +61310,7 @@ GameObject:
   m_Name: Banca18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8872653533899915975
@@ -61327,8 +61380,8 @@ GameObject:
   m_Name: pCylinder9.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8877170942376920233
 MeshCollider:
@@ -61451,7 +61504,7 @@ GameObject:
   m_Name: EscritorioProf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &8895994373474682488
@@ -61601,8 +61654,8 @@ GameObject:
   m_Name: pCube7.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8916550632347572186
 MeshCollider:
@@ -62037,7 +62090,7 @@ GameObject:
   m_Name: Silla_TARGET.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8992730317925511990
@@ -62180,8 +62233,8 @@ GameObject:
   m_Name: pCylinder12.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9001142103129180450
 MeshCollider:
@@ -62242,8 +62295,8 @@ GameObject:
   m_Name: pCylinder11.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9006269759912018711
 MeshCollider:
@@ -62353,8 +62406,8 @@ GameObject:
   m_Name: pCube9.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9009979847332784884
 MeshCollider:
@@ -62386,8 +62439,8 @@ GameObject:
   m_Name: pCylinder11.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9014305479164445258
 MeshCollider:
@@ -62692,7 +62745,7 @@ GameObject:
   m_Name: Mesa_TARGET.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &9055001365455510055
@@ -62988,8 +63041,8 @@ GameObject:
   m_Name: pCube23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9088302380838533798
 MeshCollider:
@@ -63489,8 +63542,8 @@ GameObject:
   m_Name: pCylinder13.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9152638870639350342
 MeshCollider:
@@ -63692,8 +63745,8 @@ GameObject:
   m_Name: BancaEstudiante_14:pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9160714167893161957
 MeshCollider:
@@ -63722,7 +63775,7 @@ GameObject:
   m_Name: Mesa_TARGET.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9166539798425769228
@@ -63966,8 +64019,8 @@ GameObject:
   m_Name: pCube7.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9195174869208304123
 MeshCollider:
@@ -64057,8 +64110,8 @@ GameObject:
   m_Name: pCylinder9.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9209874058460952420
 MeshCollider:
