@@ -1456,8 +1456,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b08282b230db940a4aa1d54675cb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   RatAI: {fileID: 448985654}
+  attackDistance: 10
+  attackSpeed: 20
+  ratAttackPrefab: {fileID: 3670456181480141435, guid: 2b0062012af5cee428d6c11f81dea9ec,
+    type: 3}
+  ratAttackDamage: 5
+  attackDelay: 4
 --- !u!195 &448985654
 NavMeshAgent:
   m_ObjectHideFlags: 0

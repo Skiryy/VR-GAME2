@@ -4,8 +4,14 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Rat_Enemy : MonoBehaviour
 {
-    public GameObject Player;
+    private bool canShoot = true;
     public NavMeshAgent RatAI;
+    public float attackSpeed = 10f;
+    public GameObject ratAttackPrefab;
+    public int ratAttackDamage = 10;
+    public float attackDelay = 5f;
+    private GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +26,7 @@ public class Rat_Enemy : MonoBehaviour
         {
             RatAI.speed = 0.1f;
             RatAI.angularSpeed = 270;
+            Shoot();
         }
         else
         {
@@ -27,5 +34,27 @@ public class Rat_Enemy : MonoBehaviour
             RatAI.angularSpeed = 340;
         }
 
+    }
+private void Shoot()
+{
+    if (canShoot)
+    {
+        GameObject ratAttack = Instantiate(ratAttackPrefab, transform.position, Quaternion.identity);
+        ratAttack.transform.position += Vector3.up * 5;
+        Rigidbody ratAttackRigidbody = ratAttack.GetComponent<Rigidbody>();
+
+        Vector3 direction = (Player.transform.position - transform.position).normalized;
+        direction += Vector3.down * 0.4f;
+        ratAttackRigidbody.AddForce(direction * attackSpeed, ForceMode.VelocityChange);
+        Physics.IgnoreCollision(ratAttack.GetComponent<Collider>(), GetComponent<Collider>());
+
+        canShoot = false;
+        Invoke("ResetShoot", attackDelay);
+    }
+}
+
+    private void ResetShoot()
+    {
+        canShoot = true;
     }
 }
