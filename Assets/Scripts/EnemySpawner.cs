@@ -5,6 +5,11 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public Transform spawnPoint;
+    public Transform spawnPoint2;
+    public Transform spawnPoint3;
+    public Transform spawnPoint4;
+    public Transform spawnPoint5;
+    public Transform spawnPoint6;
     public float spawnInterval = 10f;
     public int maxEnemies = 10;
 
