@@ -3,38 +3,55 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab;
-    public Transform spawnPoint;
-    public Transform spawnPoint2;
-    public Transform spawnPoint3;
-    public Transform spawnPoint4;
-    public Transform spawnPoint5;
-    public Transform spawnPoint6;
-    public float spawnInterval = 10f;
-    public int maxEnemies = 10;
+    public GameObject enemyPrefab; // The enemy prefab to spawn
+    public Transform[] spawnPoints; // The array of spawn points
+    public int waveCount = 0; // The wave count
 
-    private int currentEnemies = 0;
+    private int enemiesPerWave = 10; // The number of enemies per wave
+    private int enemiesSpawned = 0; // The number of enemies spawned in the current wave
+    private float spawnInterval = 5f; // The time interval between enemy spawns
+    private float waveCooldown = 15f; // The cooldown period between waves
 
-    private IEnumerator Start()
+    private void Start()
     {
-        while (true)
+        StartCoroutine(SpawnWave());
+    }
+
+    private IEnumerator SpawnWave()
+    {
+        yield return new WaitForSeconds(waveCooldown);
+
+        waveCount++;
+        enemiesSpawned = 0;
+        enemiesPerWave += 5;
+
+        while (enemiesSpawned < enemiesPerWave)
         {
-            yield return new WaitForSeconds(spawnInterval);
-            if (currentEnemies < maxEnemies)
-            {
+            if (enemiesSpawned < enemiesPerWave)
                 SpawnEnemy();
-                currentEnemies++;
-            }
+            yield return new WaitForSeconds(spawnInterval);
         }
+
+        StartCoroutine(SpawnWave());
     }
 
     private void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-    }
+        if (spawnPoints.Length == 0)
+        {
+            Debug.LogError("No spawn points assigned to the EnemySpawner!");
+            return;
+        }
 
-    public void DecreaseEnemyCount()
-    {
-        currentEnemies--;
+        if (enemiesSpawned >= enemiesPerWave)
+        {
+            Debug.LogWarning("Reached the enemy count limit for the wave!");
+            return;
+        }
+
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
+        Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+
+        enemiesSpawned++;
     }
 }
