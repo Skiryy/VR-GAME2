@@ -1,57 +1,81 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab; // The enemy prefab to spawn
-    public Transform[] spawnPoints; // The array of spawn points
-    public int waveCount = 0; // The wave count
+    public GameObject enemyPrefab;
+    public Transform[] spawnPoints;
+    public int initialWaveSize = 10;
+    public int additionalEnemiesPerWave = 5;
+    public float spawnInterval = 5f;
+    public float waveCooldown = 15f;
 
-    private int enemiesPerWave = 10; // The number of enemies per wave
-    private int enemiesSpawned = 0; // The number of enemies spawned in the current wave
-    private float spawnInterval = 5f; // The time interval between enemy spawns
-    private float waveCooldown = 15f; // The cooldown period between waves
+    private int currentWaveSize;
+    private int waveCount;
+    private bool isSpawning;
+    private int aliveEnemiesCount;
 
     private void Start()
     {
+        currentWaveSize = initialWaveSize;
+        waveCount = 1;
+        isSpawning = false;
+        aliveEnemiesCount = 0;
+
+        StartWave();
+    }
+
+    private void StartWave()
+    {
+        isSpawning = true;
         StartCoroutine(SpawnWave());
     }
 
     private IEnumerator SpawnWave()
     {
-        yield return new WaitForSeconds(waveCooldown);
-
-        waveCount++;
-        enemiesSpawned = 0;
-        enemiesPerWave += 5;
-
-        while (enemiesSpawned < enemiesPerWave)
+        for (int i = 0; i < currentWaveSize; i++)
         {
-            if (enemiesSpawned < enemiesPerWave)
-                SpawnEnemy();
+            SpawnEnemy();
+            aliveEnemiesCount++;
             yield return new WaitForSeconds(spawnInterval);
         }
 
-        StartCoroutine(SpawnWave());
+        while (aliveEnemiesCount > 0)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(waveCooldown);
+
+        currentWaveSize += additionalEnemiesPerWave;
+        waveCount++;
+        StartWave();
     }
 
     private void SpawnEnemy()
     {
-        if (spawnPoints.Length == 0)
+        int spawnPointIndex = Random.Range(0, spawnPoints.Length);
+        Vector3 spawnPosition = spawnPoints[spawnPointIndex].position;
+        Quaternion spawnRotation = Quaternion.identity;
+        GameObject enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
+        Rat_Enemy enemyScript = enemy.GetComponent<Rat_Enemy>();
+        enemyScript.OnEnemyDeath += OnEnemyDeath;
+        enemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
+    }
+
+    private void OnEnemyDeath()
+    {
+        // Check if all enemies in the wave have been killed
+        if (aliveEnemiesCount == 0)
         {
-            Debug.LogError("No spawn points assigned to the EnemySpawner!");
-            return;
+            isSpawning = false;
+            StopCoroutine(SpawnWave());
         }
+    }
 
-        if (enemiesSpawned >= enemiesPerWave)
-        {
-            Debug.LogWarning("Reached the enemy count limit for the wave!");
-            return;
-        }
-
-        int spawnIndex = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
-
-        enemiesSpawned++;
+    private void DecrementAliveEnemiesCount()
+    {
+        aliveEnemiesCount--;
     }
 }
