@@ -10,9 +10,8 @@ public class EnemySpawner : MonoBehaviour
     public int additionalEnemiesPerWave = 5;
     public float spawnInterval = 5f;
     public float waveCooldown = 15f;
-
     private int currentWaveSize;
-    private int waveCount;
+    public int waveCount;
     private bool isSpawning;
     private int aliveEnemiesCount;
 
@@ -66,7 +65,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnEnemyDeath()
     {
-        // Check if all enemies in the wave have been killed
         if (aliveEnemiesCount == 0)
         {
             isSpawning = false;
