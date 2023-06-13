@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject player;
+    public TextMeshProUGUI playerHealthText;
     public int playerHealth = 100;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +20,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        playerHealthText.text = "Health:" + playerHealth;
     }
     public void TakeDamage(int damage){
         playerHealth -= damage;

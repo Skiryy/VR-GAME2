@@ -12,15 +12,14 @@ public class Rat_Enemy : MonoBehaviour
     public float attackDelay = 5f;
     private GameObject Player;
 
-    public event Action OnEnemyDeath; // Event declaration
+    public event Action OnEnemyDeath; 
 
-    // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         RatAI.SetDestination(Player.transform.position);
