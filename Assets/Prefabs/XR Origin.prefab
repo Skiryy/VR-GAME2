@@ -217,6 +217,7 @@ MonoBehaviour:
     m_Reference: {fileID: 0}
   throttle: 0
   force: 0
+  drag: 0
 --- !u!1 &1312762690273256182
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 0}
   player: {fileID: 1312762690852164840}
+  playerHealthText: {fileID: 0}
   playerHealth: 100
 --- !u!1 &1312762691054920114
 GameObject:

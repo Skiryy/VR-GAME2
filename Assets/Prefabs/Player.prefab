@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 0}
   player: {fileID: 2782206039330352451}
+  playerHealthText: {fileID: 0}
   playerHealth: 100
 --- !u!1 &3051499675715185588
 GameObject:
@@ -287,6 +288,7 @@ MonoBehaviour:
       type: 3}
   throttle: 0
   force: 10
+  drag: 0
 --- !u!1 &2171736745388129119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1312762691054920114, guid: 9dff958657cd80f4f80818b63e75bf62,
