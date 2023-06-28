@@ -21,6 +21,9 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         playerHealthText.text = "Health:" + playerHealth;
+        if (playerHealth <= 0){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       }
     }
     public void TakeDamage(int damage){
         playerHealth -= damage;

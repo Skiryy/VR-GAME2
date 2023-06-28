@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
         throttle = Jetpack.action.ReadValue<float>();
         Player.GetComponent<Rigidbody>().AddForce(Controller.transform.forward * throttle * force * Time.deltaTime);
 
-
+        
         Player.transform.localEulerAngles = new Vector3(0, Controller.transform.localEulerAngles.y, 0);
         DeTurn.transform.localEulerAngles = new Vector3(0, -Controller.transform.localEulerAngles.y, 0);
         RaycastHit hit;
