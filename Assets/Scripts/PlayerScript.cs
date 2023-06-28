@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
@@ -21,6 +22,9 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         playerHealthText.text = "Health:" + playerHealth;
+        if (playerHealth <= 0){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       }
     }
     public void TakeDamage(int damage){
         playerHealth -= damage;
