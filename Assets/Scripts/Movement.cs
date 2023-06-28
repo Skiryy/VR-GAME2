@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     public float throttle;
     public float force;
     public float drag;
+    public float Ray;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,15 +30,17 @@ public class Movement : MonoBehaviour
         Joystick = Joystick.normalized;
 
         throttle = Jetpack.action.ReadValue<float>();
-        Player.GetComponent<Rigidbody>().AddForce(Controller.transform.forward * throttle * force);
+        Player.GetComponent<Rigidbody>().AddForce(Controller.transform.forward * throttle * force * Time.deltaTime);
 
 
         Player.transform.localEulerAngles = new Vector3(0, Controller.transform.localEulerAngles.y, 0);
         DeTurn.transform.localEulerAngles = new Vector3(0, -Controller.transform.localEulerAngles.y, 0);
-
-        Player.GetComponent<Rigidbody>().AddRelativeForce(Joystick.x * Speed * Time.deltaTime, 0, Joystick.y * Speed * Time.deltaTime, ForceMode.Impulse);
+        RaycastHit hit;
+        
+        if (Physics.Raycast(Player.transform.position, -Player.transform.up, out hit, Ray)) {
+            Player.GetComponent<Rigidbody>().AddRelativeForce(Joystick.x * Speed * Time.deltaTime, 0, Joystick.y * Speed * Time.deltaTime, ForceMode.Impulse);
+        }
         Player.GetComponent<Rigidbody>().AddForce(new Vector3(-Player.GetComponent<Rigidbody>().velocity.x * drag, 0, -Player.GetComponent<Rigidbody>().velocity.z * drag) * Time.deltaTime, ForceMode.Impulse);
-
         // Player.transform.Translate(Joystick.x * Speed, 0, Joystick.y * Speed);
 
         if (Snapturn.action.triggered && Mathf.Abs(Snapturn.action.ReadValue<Vector2>().x) > 0.5f)
