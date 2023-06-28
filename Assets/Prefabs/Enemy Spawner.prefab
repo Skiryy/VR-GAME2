@@ -53,4 +53,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  initialWaveSize: 10
+  additionalEnemiesPerWave: 5
+  spawnInterval: 1
+  waveCooldown: 15
   waveCount: 0
+  waveText: {fileID: 0}
