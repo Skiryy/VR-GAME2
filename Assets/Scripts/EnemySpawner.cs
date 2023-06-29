@@ -19,9 +19,10 @@ public class EnemySpawner : MonoBehaviour
     private int aliveEnemiesCount;
     public TextMeshProUGUI waveText;
     private float baseWeight = 10f;
+    private float currentWeight = 10f;
     private float weightIncrease = 5f;
-    private float ratWeight = 1f;
-    private float vugWeight = 3f;
+    private float ratWeight = 2f;
+    private float bugWeight = 1f;
     private void Start()
     {
         currentWaveSize = initialWaveSize;
@@ -56,24 +57,48 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(waveCooldown);
 
         currentWaveSize += additionalEnemiesPerWave;
+        baseWeight += weightIncrease;
+        currentWeight = baseWeight;
         waveCount++;
         StartWave();
     }
 
     private void SpawnEnemy()
     {
-        
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
         Vector3 spawnPosition = spawnPoints[spawnPointIndex].position;
         Quaternion spawnRotation = Quaternion.identity;
-        GameObject enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
-        GameObject bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
-        Rat_Enemy enemyScript = enemy.GetComponent<Rat_Enemy>();
-        Bug_Enemy bugEnemyScript = bugEnemy.GetComponent<Bug_Enemy>();
-        enemyScript.OnEnemyDeath += OnEnemyDeath;
-        bugEnemyScript.OnEnemyDeath += OnEnemyDeath;
-        enemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
-        bugEnemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
+        GameObject enemy = null;
+        GameObject bugEnemy = null;
+
+        if (currentWeight > 0)
+        {
+            int rand = Random.Range(0, 2);
+            if (rand == 0)
+            {
+                enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
+                currentWeight -= ratWeight;
+            }
+            else if (rand == 1)
+            {
+                bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
+                currentWeight -= bugWeight;
+            }
+
+            if (enemy != null)
+            {
+                Rat_Enemy enemyScript = enemy.GetComponent<Rat_Enemy>();
+                enemyScript.OnEnemyDeath += OnEnemyDeath;
+                enemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
+            }
+
+            if (bugEnemy != null)
+            {
+                Bug_Enemy bugEnemyScript = bugEnemy.GetComponent<Bug_Enemy>();
+                bugEnemyScript.OnEnemyDeath += OnEnemyDeath;
+                bugEnemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
+            }
+        }
     }
 
     private void OnEnemyDeath()
