@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    public GameObject bugEnemyPrefab;
     public Transform[] spawnPoints;
     public int initialWaveSize = 10;
     public int additionalEnemiesPerWave = 5;
@@ -17,6 +18,10 @@ public class EnemySpawner : MonoBehaviour
     private bool isSpawning;
     private int aliveEnemiesCount;
     public TextMeshProUGUI waveText;
+    private float baseWeight = 10f;
+    private float weightIncrease = 5f;
+    private float ratWeight = 1f;
+    private float vugWeight = 3f;
     private void Start()
     {
         currentWaveSize = initialWaveSize;
@@ -57,13 +62,18 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
+        
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
         Vector3 spawnPosition = spawnPoints[spawnPointIndex].position;
         Quaternion spawnRotation = Quaternion.identity;
         GameObject enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
+        GameObject bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
         Rat_Enemy enemyScript = enemy.GetComponent<Rat_Enemy>();
+        Bug_Enemy bugEnemyScript = bugEnemy.GetComponent<Bug_Enemy>();
         enemyScript.OnEnemyDeath += OnEnemyDeath;
+        bugEnemyScript.OnEnemyDeath += OnEnemyDeath;
         enemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
+        bugEnemyScript.OnEnemyDeath += DecrementAliveEnemiesCount;
     }
 
     private void OnEnemyDeath()

@@ -64,8 +64,8 @@ public class Rat_Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("playerAttack"))
         {
-            Destroy(collision.gameObject); // Destroy the projectile
-            OnEnemyDeath?.Invoke(); // Invoke the OnEnemyDeath event
+            Destroy(collision.gameObject);
+            OnEnemyDeath?.Invoke();
         }
     }
 }
