@@ -684,8 +684,10 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 997598151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &558181329
-GameObject:
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &518428202
+PrefabInstance:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
