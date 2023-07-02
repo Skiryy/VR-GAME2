@@ -1136,6 +1136,8 @@ MonoBehaviour:
   Lerp: 0.1
   MinimalDistance: 1
   LockOn: 0
+  System: {fileID: 0}
+  LockHeight: 20
 --- !u!136 &2992667062100512233
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -14,13 +14,15 @@ public class Bug_Enemy : MonoBehaviour
     private GameObject Player;
     public event Action OnEnemyDeath; 
     public bool LockOn;
+    public BugSystem System;
+    public float LockHeight;
     // Start is called before the first frame update
     void Start()
     {
         Destination = transform.position;
         Player = GameObject.Find("Player");
         LockOn = false;
-
+        System = GameObject.Find("Bug controller").GetComponent<BugSystem>();
     }
 
     // Update is called once per frame
@@ -38,11 +40,12 @@ public class Bug_Enemy : MonoBehaviour
         }
         else{
             Destination = Player.transform.position;
-            transform.transform.position = Vector3.MoveTowards(transform.position, Destination, Mathf.Clamp(Mathf.Lerp(Vector3.Distance(transform.position, Destination),0,Lerp),0, LockStep) * Time.deltaTime);
+            transform.transform.position = Vector3.MoveTowards(transform.position, Destination, LockStep * Time.deltaTime);
         }
         transform.LookAt(Destination, Vector3.forward);
-        if(Player.transform.position.y >= 20){
+        if(Player.transform.position.y >= System.LockHeight && System.BugsLocked <= (System.MaxLocked - 1)){
             LockOn = true;
+            System.BugsLocked += 1;
         }
     }
 
@@ -53,7 +56,10 @@ public class Bug_Enemy : MonoBehaviour
         Destination = new Vector3(RandomX, 21.8088f, RandomY);
     }
 
-
+    private void OnDestroy()
+    {
+        System.BugsLocked -= 1;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("playerAttack"))
