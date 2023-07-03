@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     public Transform spawnPoint;
     public GameObject player;
     public TextMeshProUGUI playerHealthText;
-    public int playerHealth = 100;
+    public float playerHealth = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        }
     }
-    public void TakeDamage(int damage){
+    public void TakeDamage(float damage){
         playerHealth -= damage;
         Debug.Log(playerHealth);
     }

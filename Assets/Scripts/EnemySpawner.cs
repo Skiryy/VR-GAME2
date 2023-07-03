@@ -81,10 +81,10 @@ public class EnemySpawner : MonoBehaviour
             }
             else if (rand == 1)
             {
-                //bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
-                //currentWeight -= bugWeight
-                enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
-                currentWeight -= ratWeight;;
+                bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
+                currentWeight -= bugWeight;
+                //enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
+                //currentWeight -= ratWeight;;
                 aliveEnemiesCount++;
             }
 

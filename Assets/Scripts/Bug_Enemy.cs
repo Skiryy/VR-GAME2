@@ -66,6 +66,17 @@ public class Bug_Enemy : MonoBehaviour
         {
             Destroy(collision.gameObject); // Destroy the projectile
             OnEnemyDeath?.Invoke(); // Invoke the OnEnemyDeath event
+
+        }
+        else if (collision.gameObject.CompareTag("playerTag"))
+        {
+            Debug.Log("Hit");
+            collision.gameObject.GetComponent<PlayerScript>().TakeDamage(5f);
+            GetComponent<BoxCollider>().enabled = false;
+            Destroy(this.gameObject);
+            OnEnemyDeath?.Invoke(); // Invoke the OnEnemyDeath event
+
+
         }
     }
 }
