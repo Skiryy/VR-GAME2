@@ -18,10 +18,10 @@ public class EnemySpawner : MonoBehaviour
     private bool isSpawning;
     private int aliveEnemiesCount;
     public TextMeshProUGUI waveText;
-    private float baseWeight = 10f;
-    private float currentWeight = 10f;
-    private float weightIncrease = 5f;
-    private float ratWeight = 2f;
+    public float baseWeight = 10f;
+    public float currentWeight = 10f;
+    public float weightIncrease = 5f;
+    private float ratWeight = 1f;
     private float bugWeight = 1f;
     private void Start()
     {
@@ -45,7 +45,6 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 0; i < currentWaveSize; i++)
         {
             SpawnEnemy();
-            aliveEnemiesCount++;
             yield return new WaitForSeconds(spawnInterval);
         }
 
@@ -78,11 +77,15 @@ public class EnemySpawner : MonoBehaviour
             {
                 enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
                 currentWeight -= ratWeight;
+                aliveEnemiesCount++;
             }
             else if (rand == 1)
             {
-                bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
-                currentWeight -= bugWeight;
+                //bugEnemy = Instantiate(bugEnemyPrefab, spawnPosition, spawnRotation);
+                //currentWeight -= bugWeight
+                enemy = Instantiate(enemyPrefab, spawnPosition, spawnRotation);
+                currentWeight -= ratWeight;;
+                aliveEnemiesCount++;
             }
 
             if (enemy != null)

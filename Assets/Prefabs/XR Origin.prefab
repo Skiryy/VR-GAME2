@@ -218,6 +218,7 @@ MonoBehaviour:
   throttle: 0
   force: 0
   drag: 0
+  Ray: 0
 --- !u!1 &1312762690273256182
 GameObject:
   m_ObjectHideFlags: 0
