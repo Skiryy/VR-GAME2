@@ -16,10 +16,11 @@ public class Movement : MonoBehaviour
     public float force;
     public float drag;
     public float Ray;
+    public float offset;
     // Start is called before the first frame update
     void Start()
     {
-        
+        offset = 0;
     }
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class Movement : MonoBehaviour
         Player.GetComponent<Rigidbody>().AddForce(Controller.transform.forward * throttle * force * Time.deltaTime);
 
         
-        Player.transform.localEulerAngles = new Vector3(0, Controller.transform.localEulerAngles.y, 0);
+        Player.transform.localEulerAngles = new Vector3(0, Controller.transform.localEulerAngles.y + offset, 0);
         DeTurn.transform.localEulerAngles = new Vector3(0, -Controller.transform.localEulerAngles.y, 0);
         RaycastHit hit;
         
@@ -42,12 +43,12 @@ public class Movement : MonoBehaviour
         }
         Player.GetComponent<Rigidbody>().AddForce(new Vector3(-Player.GetComponent<Rigidbody>().velocity.x * drag, 0, -Player.GetComponent<Rigidbody>().velocity.z * drag) * Time.deltaTime, ForceMode.Impulse);
         // Player.transform.Translate(Joystick.x * Speed, 0, Joystick.y * Speed);
-
+        Debug.Log(offset);
         if (Snapturn.action.triggered && Mathf.Abs(Snapturn.action.ReadValue<Vector2>().x) > 0.5f)
         {
             // Snap turn by rotating the player by 25 degrees in the appropriate direction
-            float turnAmount = Mathf.Sign(Snapturn.action.ReadValue<Vector2>().x) * 25f;
-            Player.transform.Rotate(0, turnAmount, 0);
+            offset += 25 * Mathf.Sign(Snapturn.action.ReadValue<Vector2>().x);
+            
         }
     }
 }
