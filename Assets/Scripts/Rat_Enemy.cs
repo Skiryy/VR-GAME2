@@ -10,13 +10,19 @@ public class Rat_Enemy : MonoBehaviour
     public GameObject ratAttackPrefab;
     public int ratAttackDamage = 10;
     public float attackDelay = 5f;
+    public float startingHealth = 300f;
+    private float currentHealth;
     private GameObject Player;
+    AudioSource m_damageSound;
+
 
     public event Action OnEnemyDeath; 
 
     void Start()
     {
         Player = GameObject.Find("Player");
+        m_damageSound = GetComponent<AudioSource>();
+        currentHealth = startingHealth;
     }
 
 
@@ -36,6 +42,17 @@ public class Rat_Enemy : MonoBehaviour
             RatAI.angularSpeed = 340;
         }
     }
+    public void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage;
+        m_damageSound.Play();
+        Debug.Log(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
 
     private void Shoot()
     {
@@ -60,12 +77,17 @@ public class Rat_Enemy : MonoBehaviour
         canShoot = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+        //if (collision.gameObject.CompareTag("playerAttack"))
+       // {
+          //  Destroy(collision.gameObject);
+          //  OnEnemyDeath?.Invoke();
+      //  }
+  //  }
+    private void Die()
     {
-        if (collision.gameObject.CompareTag("playerAttack"))
-        {
-            Destroy(collision.gameObject);
-            OnEnemyDeath?.Invoke();
-        }
+        Destroy(gameObject);
+        OnEnemyDeath?.Invoke();
     }
 }

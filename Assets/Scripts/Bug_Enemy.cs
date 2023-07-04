@@ -16,6 +16,8 @@ public class Bug_Enemy : MonoBehaviour
     public bool LockOn;
     public BugSystem System;
     public float LockHeight;
+    public float startingHealth = 50f;
+    private float currentHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,15 @@ public class Bug_Enemy : MonoBehaviour
         float RandomY = UnityEngine.Random.Range(-70, 4);
         Destination = new Vector3(RandomX, 21.8088f, RandomY);
     }
+    public void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage;
+        Debug.Log(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
 
     private void OnDestroy()
     {
@@ -62,13 +73,7 @@ public class Bug_Enemy : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("playerAttack"))
-        {
-            Destroy(collision.gameObject); // Destroy the projectile
-            OnEnemyDeath?.Invoke(); // Invoke the OnEnemyDeath event
-
-        }
-        else if (collision.gameObject.CompareTag("playerTag"))
+        if (collision.gameObject.CompareTag("playerTag"))
         {
             Debug.Log("Hit");
             collision.gameObject.GetComponent<PlayerScript>().TakeDamage(5f);
@@ -78,5 +83,10 @@ public class Bug_Enemy : MonoBehaviour
 
 
         }
+    }
+    private void Die()
+    {
+        Destroy(gameObject);
+        OnEnemyDeath?.Invoke();
     }
 }
