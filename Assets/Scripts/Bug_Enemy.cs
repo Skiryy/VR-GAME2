@@ -18,9 +18,11 @@ public class Bug_Enemy : MonoBehaviour
     public float LockHeight;
     public float startingHealth = 50f;
     private float currentHealth;
+    AudioSource m_damageSound;
     // Start is called before the first frame update
     void Start()
     {
+        m_damageSound = GetComponent<AudioSource>();
         Destination = transform.position;
         Player = GameObject.Find("Player");
         LockOn = false;
@@ -60,6 +62,7 @@ public class Bug_Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth = currentHealth - damage;
+        m_damageSound.Play();
         Debug.Log(currentHealth);
         if (currentHealth <= 0)
         {

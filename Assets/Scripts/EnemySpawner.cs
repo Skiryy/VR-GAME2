@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
     public float baseWeight = 10f;
     public float currentWeight = 10f;
     public float weightIncrease = 5f;
-    private float ratWeight = 1f;
+    private float ratWeight = 2f;
     private float bugWeight = 1f;
     private void Start()
     {
