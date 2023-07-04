@@ -1139,6 +1139,7 @@ MonoBehaviour:
   LockOn: 0
   System: {fileID: 0}
   LockHeight: 20
+  startingHealth: 50
 --- !u!136 &2992667062100512233
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1174,7 +1175,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 220.79
+  MaxDistance: 117.5
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -1220,8 +1221,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0.25540996
     - serializedVersion: 3
-      time: 0.70881635
-      value: 0.12088013
+      time: 0.69560224
+      value: 0.05065918
       inSlope: -0.077570066
       outSlope: -0.077570066
       tangentMode: 0
@@ -1229,8 +1230,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.902771
-      value: 0.10875796
+      time: 0.905426
+      value: 0
       inSlope: -0.05039787
       outSlope: -0.05039787
       tangentMode: 0
