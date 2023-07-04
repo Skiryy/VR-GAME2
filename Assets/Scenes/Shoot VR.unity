@@ -2061,6 +2061,12 @@ PrefabInstance:
       propertyPath: Speed
       value: 39
       objectReference: {fileID: 0}
+    - target: {fileID: 7223125784612362393, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
+        type: 3}
+      propertyPath: Snapturn.m_Reference
+      value: 
+      objectReference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     - target: {fileID: 8065188552342897547, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2068,20 +2074,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985f0ae3152fbcf4cb41075d847e9a8c, type: 3}
---- !u!1 &660844367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2782206039330352451, guid: 985f0ae3152fbcf4cb41075d847e9a8c,
-    type: 3}
-  m_PrefabInstance: {fileID: 660844366}
-  m_PrefabAsset: {fileID: 0}
---- !u!81 &660844368
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660844367}
-  m_Enabled: 1
 --- !u!1 &693517349
 GameObject:
   m_ObjectHideFlags: 0
